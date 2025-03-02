@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 
 const data = [
-    {
-        id: 1,
-        name: "A"
-    },
-    {
-        id: 2,
-        name: "B"
-    }
+    { id: 1, name: "A" },
+    { id: 2, name: "B" }
 ];
 
 function HomePage() {
@@ -21,7 +15,6 @@ function HomePage() {
     return (
         <div>
             <button onClick={handleClick}>Click</button>
-            <div className='infor'></div>
             {show && data.map((item) => (
                 <div key={item.id}>
                     <h1>{item.id}</h1>
@@ -29,7 +22,21 @@ function HomePage() {
                 </div>
             ))}
         </div>
+        
     );
 }
 
+// function Counter() {
+//     const [count, setCount] = useState(0);
+
+//     return (
+//         <div>
+//             <p>Số lần bấm: {count}</p>
+//             <button onClick={() => setCount(count + 1)}>Tăng</button>
+//             <button onClick={() => setCount(count - 1)}>Giảm</button>
+//         </div>
+//     );
+// }
+
 export default HomePage;
+// export { Counter };

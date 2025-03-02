@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import HomePage from './pages/HomePage'
-
+import React from 'react';
+import './App.css';
+import HomePage from './pages/HomePage';
+import Button from './components/common/button';
+import ShopPage from './pages/ShopPage';
+import ProductList from './components/common/ProductList';
 function App() {
   return (
     <>
-      <HomePage/>
+      <ProductList></ProductList>
     </>
   );
 }
